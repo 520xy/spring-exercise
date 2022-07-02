@@ -12,6 +12,26 @@ public class Brand {
     public Brand() {
     }
 
+    @Override
+    public String toString() {
+        return "Brand{" +
+                "id=" + id +
+                ", brandName='" + brandName + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", ordered=" + ordered +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                '}';
+    }
+
+    public Brand(String brandName, String companyName, int ordered, String description, int status) {
+        this.brandName = brandName;
+        this.companyName = companyName;
+        this.ordered = ordered;
+        this.description = description;
+        this.status = status;
+    }
+
     public Brand(int id, String brandName, String companyName, int ordered, String description, int status) {
         this.id = id;
         this.brandName = brandName;
