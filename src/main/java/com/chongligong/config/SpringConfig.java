@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @ComponentScan({"com.chongligong.dao","com.chongligong.service"})
-@PropertySource({"jdbc.properties"})
+@PropertySource({"classpath:jdbc.properties"})
 @Import({JDBCConfig.class,MybatisConfig.class})
 @EnableTransactionManagement
 public class SpringConfig {

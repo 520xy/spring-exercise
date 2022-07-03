@@ -1,7 +1,5 @@
 package com.chongligong.controller;
 
-import java.util.Objects;
-
 public class Result {
     private int code;
     private Object data;
