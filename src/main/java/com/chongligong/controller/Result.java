@@ -4,18 +4,18 @@ import java.util.Objects;
 
 public class Result {
     private int code;
-    private Objects data;
+    private Object data;
     private String msg;
 
     public Result() {
     }
 
-    public Result(int code, Objects data) {
+    public Result(int code, Object data) {
         this.code = code;
         this.data = data;
     }
 
-    public Result(int code, Objects data, String msg) {
+    public Result(int code, Object data, String msg) {
         this.code = code;
         this.data = data;
         this.msg = msg;
@@ -29,11 +29,11 @@ public class Result {
         this.code = code;
     }
 
-    public Objects getData() {
+    public Object getData() {
         return data;
     }
 
-    public void setData(Objects data) {
+    public void setData(Object data) {
         this.data = data;
     }
 
