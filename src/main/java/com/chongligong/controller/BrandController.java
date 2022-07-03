@@ -25,6 +25,7 @@ public class BrandController {
         Boolean delete = brandService.delete(id);
         return new Result(delete?Code.DELETE_OK:Code.DELETE_ERR,delete);
     }
+
     @PutMapping
      public Result update(@RequestBody Brand brand)
     {

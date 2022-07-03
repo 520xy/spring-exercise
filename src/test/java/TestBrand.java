@@ -29,9 +29,9 @@ public class TestBrand {
     }
 
     @Test
-    public void TestUpdata()
+    public void TestUpdate()
     {
-        Brand brand = new Brand(36,"云南白药", "云南白药股份有限公司", 2333, "国家秘方", 1);
+        Brand brand = new Brand(40,"云南白药", "云南白药股份有限公司", 2333, "国家秘方", 0);
         brandDao.update(brand);
     }
 
